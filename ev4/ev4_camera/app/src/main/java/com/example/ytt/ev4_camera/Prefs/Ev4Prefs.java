@@ -8,5 +8,6 @@ import android.os.Environment;
 
 public class Ev4Prefs {
 
-    public static final String IMG_DIR= Environment.getExternalStorageDirectory()+
+    public static final String IMG_DIR= Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getPath()+"/EV4";
+
 }

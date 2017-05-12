@@ -11,6 +11,7 @@
         android:id="@+id/btn_take_pic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="take_picture"
         android:text="TakePicture" />
 
     <Button
@@ -24,6 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
+
+    <ImageView
+        android:id="@+id/main_show_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <LinearLayout
         android:layout_width="match_parent"
