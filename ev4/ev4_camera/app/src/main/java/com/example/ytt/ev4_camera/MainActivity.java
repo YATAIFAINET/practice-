@@ -5,6 +5,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.hardware.camera2.CameraDevice;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.ContactsContract;
@@ -44,15 +45,21 @@ public class MainActivity extends Activity {
 
 
         Log.i("public pic directory", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getPath());
-        File e=Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
+        File e=Environment.getExternalStoragePublicDirectory(MediaStore.Images.Media.DATA);
 
+        MediaStore.Images.Media.getContentUri(MediaStore.EXTRA_MEDIA_ALBUM);
+        Log.i("Album?   ", MediaStore.Images.Media.getContentUri(MediaStore.Images.Media.DATA).getPath());
+
+
+
+        /*
         String[] s=e.list();
         for(int i=0;i<s.length;i++){
             Log.d("files in dir",s[i]);
 
         }
+    */
 
-        //
 
         dir=new File(Ev4Prefs.IMG_DIR);
         if(!dir.exists()){
@@ -69,6 +76,7 @@ public class MainActivity extends Activity {
     public void take_picture(View v){
             Intent takePicture=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             ext_pic=new File(dir,"ev6.png");
+         MediaStore.Images.Media.getContentUri(MediaStore.Images.Media.EXTERNAL_CONTENT_URI.getPath());
        /* try{
             if(!ext_pic.exists()){ext_pic.createNewFile();}
         }catch(Exception e){
@@ -76,7 +84,7 @@ public class MainActivity extends Activity {
         }*/
             takePicture.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(dir));
             startActivityForResult(takePicture,REQ_TAKE_PICTURE);
-
+        Log.d("fainet", Ev4Prefs.IMG_DIR);
     }
 
 
@@ -94,9 +102,11 @@ public class MainActivity extends Activity {
         if(requestCode==REQ_TAKE_PICTURE && resultCode==RESULT_OK){
             show_on_main=(ImageView)findViewById(R.id.main_show_image);
             Log.e("Success","taking");
+
+            data.getData();
             Bitmap ctrd= BitmapFactory.decodeFile(ext_pic.getPath());
 
-            Log.e("Captured Image", Boolean.toString(ctrd==null));
+            Log.e("Image null", Boolean.toString(ctrd==null));
 
 
 
