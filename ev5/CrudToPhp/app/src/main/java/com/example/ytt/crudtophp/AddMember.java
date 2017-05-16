@@ -48,8 +48,6 @@ public class AddMember extends AppCompatActivity {
 
 
     public void addMember(View v){
-        String na=uName.getText().toString();
-        String em=uEmail.getText().toString();
         Thread h1=new Thread(new Reg(uName.getText().toString(),uEmail.getText().toString()));
         h1.start();
 

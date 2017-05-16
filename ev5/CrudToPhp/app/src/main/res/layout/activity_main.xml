@@ -44,4 +44,11 @@
         android:onClick="delete_user"
         android:text="deleteuser" />
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="general_connect"
+        android:text="GENERALCONNECT" />
+
 </LinearLayout>

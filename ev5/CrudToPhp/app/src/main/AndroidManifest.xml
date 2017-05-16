@@ -23,7 +23,8 @@
         <activity android:name=".prefs.AddMember" />
         <activity android:name=".AddMember" />
         <activity android:name=".ChangeData" />
-        <activity android:name=".DeleteUser"></activity>
+        <activity android:name=".DeleteUser" />
+        <activity android:name=".ConnectionTest"></activity>
     </application>
 
 </manifest>

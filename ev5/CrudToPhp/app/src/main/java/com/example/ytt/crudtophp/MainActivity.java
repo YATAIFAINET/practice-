@@ -32,4 +32,8 @@ public class MainActivity extends Activity {
         startActivity(new Intent(this,DeleteUser.class));
 
     }
+
+    public void general_connect(View v){
+        startActivity(new Intent(this,ConnectionTest.class));
+    }
 }

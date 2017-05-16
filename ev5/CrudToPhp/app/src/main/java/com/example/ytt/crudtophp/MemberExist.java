@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.ytt.crudtophp.DataAccessor.UserAccessor;
+
 import com.example.ytt.crudtophp.prefs.LinkPref;
 
 import org.w3c.dom.Text;
