@@ -43,4 +43,8 @@ public class MainActivity extends Activity {
     public void flex_userData(View v){
         startActivity(new Intent(this,FlexInfoLoad.class));
     }
+
+    public void qury_userData(View v){
+        startActivity(new Intent(this,QuryUser.class));
+    }
 }

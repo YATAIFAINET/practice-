@@ -21,6 +21,7 @@ public class NetAccessor implements Runnable {
     public static final int FULL_DATA=6;
     public static final int FLEX_DATA=7;
     public static final int FLEX_JSON=8;
+    public static final int QURY_USER=9;
     private String post_request="";
     private int cmd=-1;
     private String[] params;
@@ -39,6 +40,7 @@ public class NetAccessor implements Runnable {
             case FULL_DATA:setParam_FullData();break;
             case FLEX_DATA:setParam_FlexData();break;
             case FLEX_JSON:setParam_FlexJSON();break;
+            case QURY_USER:setParam_queryUser();break;
         }
 
 
@@ -130,6 +132,13 @@ public class NetAccessor implements Runnable {
     private void setParam_FlexJSON(){
         //params non exist
         post_request+="action=8";
+    }
+
+    private void setParam_queryUser(){
+        //params[email,name,tel]
+        post_request+="action=9&email="+params[0]+
+                        "&name="+params[1]+
+                        "&tel="+params[2];
     }
 
 

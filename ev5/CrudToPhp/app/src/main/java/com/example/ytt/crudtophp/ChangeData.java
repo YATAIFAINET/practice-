@@ -1,5 +1,6 @@
 package com.example.ytt.crudtophp;
 
+import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.ytt.crudtophp.Adaptors.BriefNameFlexAdaptor;
+import com.example.ytt.crudtophp.DataAccessor.MyMember;
+import com.example.ytt.crudtophp.DataAccessor.NetAccessor;
+
+import org.json.JSONArray;
 
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -19,6 +26,11 @@ public class ChangeData extends AppCompatActivity {
     EditText input_data=null;
     TextView result=null;
     EditText input_id=null;
+    EditText input_name=null;
+    EditText input_tel=null;
+    EditText input_email=null;
+    BriefNameFlexAdaptor bn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,20 +40,14 @@ public class ChangeData extends AppCompatActivity {
     }
 
     private void init_views(){
-        input_data=(EditText)findViewById(R.id.input_change_name);
-        input_id=(EditText)findViewById(R.id.input_changedata_userid);
-        result=(TextView)findViewById(R.id.view_result_changeData);
+        input_name=(EditText)findViewById(R.id.input_change_name);
+        //input_email=(EditText)findViewById(R.id.input_changedata_userid);
+        input_tel=(EditText)findViewById(R.id.input_changedata_userTel);
     }
 
 
     private void init_handler() {
-        hnd=new Handler(){
-            @Override
-            public void handleMessage(Message msg) {
-                super.handleMessage(msg);
-                result.setText((String)msg.obj);
-            }
-        };
+
     }
 
 

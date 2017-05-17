@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MemberExist" />
+        <activity android:name=".QuryUser" />
         <activity android:name=".FlexInfoLoad"/>
         <activity android:name=".AddMember" />
         <activity android:name=".ChangeData" />

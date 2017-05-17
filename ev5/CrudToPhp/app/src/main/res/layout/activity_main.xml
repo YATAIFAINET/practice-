@@ -65,4 +65,11 @@
         android:onClick="flex_userData"
         android:text="flexibility" />
 
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="qury_userData"
+        android:text="QURYUSER" />
+
 </LinearLayout>
