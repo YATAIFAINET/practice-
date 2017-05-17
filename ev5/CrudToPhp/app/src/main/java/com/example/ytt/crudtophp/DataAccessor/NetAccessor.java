@@ -19,15 +19,17 @@ public class NetAccessor implements Runnable {
     public static final int DELETE_USER=4;
     public static final int PAIR_DATA=5;
     public static final int FULL_DATA=6;
+    public static final int FLEX_DATA=7;
+    public static final int FLEX_JSON=8;
     private String post_request="";
+    private int cmd=-1;
     private String[] params;
 
 
     public NetAccessor(Handler callbackhandler,int command,String... parameters){
         hnd=callbackhandler;
         params=parameters;
-
-        Log.d("cmd",Integer.toString(command));
+        cmd=command;
         switch(command){
             case ADD_MEMBER:setParam_AddMember();break;
             case CHANGE_DATA:setParam_ChangeData();break;
@@ -35,6 +37,8 @@ public class NetAccessor implements Runnable {
             case DELETE_USER:setParam_DeleteUser();break;
             case PAIR_DATA:setParam_PairData();break;
             case FULL_DATA:setParam_FullData();break;
+            case FLEX_DATA:setParam_FlexData();break;
+            case FLEX_JSON:setParam_FlexJSON();break;
         }
 
 
@@ -56,11 +60,9 @@ public class NetAccessor implements Runnable {
             conn.connect();
 
             OutputStream ost=conn.getOutputStream();
-            Log.d("post request",post_request);
             ost.write(post_request.getBytes());
             ost.flush();
             ost.close();
-            Log.d("sss",hnd.toString());
             InputStreamReader isr=new InputStreamReader(conn.getInputStream());
 
             int x=0;
@@ -73,11 +75,14 @@ public class NetAccessor implements Runnable {
                 x = isr.read(buf);
 
             }
-            Log.d("result",result);
+
             Message msg=Message.obtain();
+            result=result.trim();
             msg.obj=result;
+            msg.arg1=cmd;
+
             hnd.sendMessage(msg);
-            Log.d("message","sent");
+
 
         }
         catch(Exception e){
@@ -116,6 +121,15 @@ public class NetAccessor implements Runnable {
     private void setParam_FullData(){
         //params[id]
         post_request+="action=6&memberid="+params[0];
+    }
+
+    private void setParam_FlexData(){
+        //params non exist
+        post_request+="action=7";
+    }
+    private void setParam_FlexJSON(){
+        //params non exist
+        post_request+="action=8";
     }
 
 

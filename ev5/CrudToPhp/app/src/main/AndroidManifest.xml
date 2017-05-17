@@ -19,12 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MemberExist" />
-        <activity android:name=".addMember" />
-        <activity android:name=".prefs.AddMember" />
+        <activity android:name=".FlexInfoLoad"/>
         <activity android:name=".AddMember" />
         <activity android:name=".ChangeData" />
         <activity android:name=".DeleteUser" />
-        <activity android:name=".ConnectionTest"></activity>
+        <activity android:name=".ConnectionTest" />
+        <activity android:name=".GetMemberData"></activity>
     </application>
 
 </manifest>

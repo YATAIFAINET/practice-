@@ -51,4 +51,18 @@
         android:onClick="general_connect"
         android:text="GENERALCONNECT" />
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="brief_userData"
+        android:text="userList" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="flex_userData"
+        android:text="flexibility" />
+
 </LinearLayout>

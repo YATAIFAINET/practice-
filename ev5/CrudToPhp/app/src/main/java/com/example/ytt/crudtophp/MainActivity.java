@@ -36,4 +36,11 @@ public class MainActivity extends Activity {
     public void general_connect(View v){
         startActivity(new Intent(this,ConnectionTest.class));
     }
+
+    public void brief_userData(View v){
+        startActivity(new Intent(this,GetMemberData.class));
+    }
+    public void flex_userData(View v){
+        startActivity(new Intent(this,FlexInfoLoad.class));
+    }
 }
