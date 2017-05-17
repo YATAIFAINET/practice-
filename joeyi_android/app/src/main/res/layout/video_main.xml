@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f6e4c4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="影片名稱"
+            android:textColor="#555555"
+            android:textSize="16dp"
+            android:layout_margin="8dp"
+            android:id="@+id/video_name"/>
+    </LinearLayout>
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fef2e1">
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="影片類別"
+            android:textColor="#555555"
+            android:textSize="16dp"
+            android:layout_margin="8dp"
+            android:id="@+id/video_name2"/>-->
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:textColor="#555555"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listview2"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" />
+</LinearLayout>

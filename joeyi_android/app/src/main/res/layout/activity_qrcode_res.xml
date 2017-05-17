@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fef2e1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text="結果"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:layout_margin="8dp"
+        android:textIsSelectable="true"
+        android:textSize="18dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="加入最愛"
+        android:id="@+id/add"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="#3285c3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fef2e1"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的最愛"
+                    android:id="@+id/textView105"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="#555555"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="類別:"
+                    android:id="@+id/textView102"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp"
+                    android:textColor="#555555"/>
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kind"
+                    android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favo_list"
+        android:visibility="gone" />
+
+</LinearLayout>

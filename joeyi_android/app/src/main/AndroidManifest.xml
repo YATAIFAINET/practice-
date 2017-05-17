@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nick.joeyi_android2" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.nick.joeyi_android2.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.nick.joeyi_android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.example.nick.joeyi_android2.com.bbpos.cswiper.ui.CSwiperCallStateService"
+        android:protectionLevel="normal" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.nick.joeyi_android2.Global_cart"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- 信用卡付款畫面 -->
+        <activity
+            android:name="com.suntech.api.PaypageMainactivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 新增一個 activity，此 activity 主要為顯示條碼畫面用 -->
+        <activity android:name="com.suntech.api.BarCodeActivity" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.login"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.loginuser_page"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.money_detail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.money_main"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.money_webview_detail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.placard_detail_mes"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.use_page"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.product_list"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.fra3_main"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="喬易國際"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.news2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="喬易國際"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.test_page"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.join_data_qrcode"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.product_detail_list"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="產品簡介"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.pay_list"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="購物車"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.video_main"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="影片介紹"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.product_payway"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="付款及交貨方式"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.product_standard"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="商品詳細說明"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.product_shopping_noti"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="購物須知"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.my_account_e_cash"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.my_account_bonus"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.dis_new_detail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="優惠訊息"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.my_account_order"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="歷史訂單"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.my_account_order_list"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="訂單明細"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.intro_org"
+            android:label=""
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.join_success"
+            android:label="入會成功" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.join_information"
+            android:label="會員約定條款" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.join_data"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="線上推薦"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.intro_org2"
+            android:label=""
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.Give_bonus"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.shopping_step2"
+            android:label="購物車" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.news"
+            android:label="@string/title_activity_news" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.news_detail"
+            android:label="@string/title_activity_news_detail" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.contact_reply"
+            android:label="客服中心" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.contact_reply_detail"
+            android:label="客服中心" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.contact_often_qa" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.contact_often_qa_detail"
+            android:label="常見問題" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.qrcode"
+            android:label="@string/title_activity_qrcode" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.fac_qrcode"
+            android:label="@string/title_activity_qrcode" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.fac_qrcode_res_f"
+            android:label="@string/title_activity_qrcode" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.qrcode_res"
+            android:label="@string/title_activity_qrcode_res" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.qr_only_favo"
+            android:label="我的最愛" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.shopping_res"
+            android:label="@string/title_activity_shopping_res" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.pwd_ser_activity"
+            android:label="@string/title_activity_pwd_ser_activity" >
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.nick.joeyi_android2.contact2"
+            android:label="@string/title_activity_contact2" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.qrcode_main_act"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.search"
+            android:label="" >
+        </activity>
+
+        <receiver
+            android:name="com.example.nick.joeyi_android2.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.nick.afs_demo" />
+            </intent-filter>
+        </receiver>
+        <!-- 新增一服務，為讀卡機所使用 -->
+
+
+        <activity
+            android:name="com.example.nick.joeyi_android2.qr_new"
+            android:label="QRCode" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.ecash_cost_qr"
+            android:label="@string/title_activity_ecash_cost_qr" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.epv_cost_qr"
+            android:label="@string/title_activity_epv_cost_qr" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.sign_up_check_code" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.Give_bonus_ListPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.Ecash_To_Money"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.nick.joeyi_android2.Ecash_Change_ListPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.Activity_Start_Page_Select" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.Activity_Fix_Pwd" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.Activity_Payment_Page" >
+        </activity>
+        <activity android:name="com.example.nick.joeyi_android2.Activity_Fix_Mb_Info" >
+        </activity>
+    </application>
+
+</manifest>

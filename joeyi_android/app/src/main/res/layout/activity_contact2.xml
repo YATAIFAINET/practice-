@@ -1,0 +1,308 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#fef5e8"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="親愛的會員您好，如有問題歡迎與我們聯繫。"
+            android:id="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:textColor="#9a0000"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="留言類別："
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:background="#00000000">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:background="@drawable/icon"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:id="@+id/img_goto" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看客服回覆訊息"
+                android:textColor="#c13701"
+                android:textSize="15dp"
+                android:background="#00000000"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_contact_old"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:id="@+id/contact_spinner"
+            android:singleLine="true"
+            android:layout_weight="1.0">
+
+        </Spinner>
+        <!--<EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contact_title"
+            android:background="@drawable/join_shape"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:visibility="gone"/>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="常見問題"
+            android:id="@+id/often_qa"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="留言內容："
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contact_main"
+            android:background="@drawable/join_shape"
+            android:textSize="16dp"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="確認送出"
+        android:id="@+id/save_mbst"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:background="#eb840c"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fef5e8"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="公司聯絡資訊："
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#9a0000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:weightSum="2.0">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="電話："
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#555555" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#555555"
+                    android:text="07-334-7000"
+                    android:id="@+id/tel" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="傳真："
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#555555" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#555555"
+                    android:text="07-3347060"
+                    android:id="@+id/fax" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="地址："
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#555555" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="高雄市前鎮區中山二路91號20F-5"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#555555"
+                android:id="@+id/address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="網站："
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="....."
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0011ff"
+                android:id="@+id/TextView_Web_Url" />
+        </LinearLayout>
+
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context="com.example.nick.joeyi_android2.contact2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+    </LinearLayout>
+</LinearLayout>

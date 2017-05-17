@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#fbf5ce"
+        android:id="@+id/linearLayout" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/top_logo"
+            android:visibility="visible"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView21"
+                android:background="@drawable/icon_account2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView23"
+                android:background="@drawable/btn_002" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView24"
+                android:background="@drawable/btn_003" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView25"
+                android:background="@drawable/btn_004" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView26"
+                android:background="@drawable/btn_005" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView27"
+                android:background="@drawable/btn_006" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView28"
+                android:background="@drawable/btn_007" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:id="@+id/imageView29"
+                android:background="@drawable/btn_008" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

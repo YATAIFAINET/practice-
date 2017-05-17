@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Background_color_image">#FF000000</color>
+
+    <color name="moneypv">#dea447</color>
+    <color name="org">#5f90d1</color>
+    <color name="shopping">#c29bce</color>
+    <color name="join">#a9c186</color>
+    <color name="account">#f79951</color>
+    <color name="news">#be91cd</color>
+    <color name="video">#47a9de</color>
+    <color name="qrcode">#96c564</color>
+    <color name="ours">#e69b3a</color>
+
+</resources>

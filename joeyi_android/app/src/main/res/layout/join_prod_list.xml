@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0">
+<!--    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </RadioGroup>-->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/join_prod_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:textColor="#555555"
+        android:text="朵法 玫瑰芳香精露"
+        android:singleLine="true"
+        android:layout_weight="0.6"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/join_prod_pv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:textColor="#555555"
+        android:text="30PV"
+        android:layout_weight="0.2"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/join_prod_price"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:textColor="#555555"
+        android:text="100"
+        android:layout_weight="0.2"/>
+
+
+</LinearLayout>

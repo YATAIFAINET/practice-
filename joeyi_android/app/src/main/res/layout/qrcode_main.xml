@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="3.0">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="#e78a08"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1.0"
+        android:textColor="#ffffff"
+        android:text="電子錢包扣款"
+        android:id="@+id/e_cash_co"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="#3983cc"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="購車點數扣款"
+        android:layout_weight="1.0"
+        android:id="@+id/e_pv_co"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="#e78a08"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:text="掃描QRcode"
+        android:layout_weight="1.0"
+        android:id="@+id/sw_qr"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6e4c4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="扣款紀錄"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@id/android:list"></ListView>
+</LinearLayout>

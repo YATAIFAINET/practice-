@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="2"
+        android:background="#fbf5ce"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_txt"
+            android:background="#fbf5ce"
+            android:layout_marginBottom="2dp"
+            android:text="請輸入商品關鍵字"
+            android:textColor="#c37b3a"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView67"
+            android:background="@drawable/search_line" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:id="@+id/search"
+        android:background="@drawable/icon_nar"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="12dp" />
+</LinearLayout>

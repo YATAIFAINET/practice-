@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef5e8"
+    android:weightSum="2">
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:src="@drawable/icon"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_account_list"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:textColor="#555555"
+        android:text="報單積分" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/can_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:textColor="#555555"
+        android:text="可使用點數：" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_eff_point"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14dp"
+        android:textColor="#555555"
+        android:text="0"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cant_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:textColor="#555555"
+        android:text="未生效點數："
+        android:visibility="gone"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eff_point"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14dp"
+        android:textColor="#555555"
+        android:text="0"
+        android:visibility="gone"
+        android:singleLine="true"/>
+
+</LinearLayout>

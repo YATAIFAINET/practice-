@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fef5e8"
+        android:weightSum=" 3.0" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獎金項目"
+            android:textSize="20dp"
+            android:textColor="#333333"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/money_kind"
+            android:layout_weight="2.5"
+            android:gravity="left"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獎金總額"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#333333"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="10px"
+            android:id="@+id/tv_money_sum_total"
+            android:text="$1000000"
+            android:textColor="#cc0000" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:id="@+id/imageView18"
+        android:background="#cccccc" />-->
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@id/android:list" />
+
+</LinearLayout>

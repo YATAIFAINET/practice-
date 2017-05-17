@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fef2e1"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="購車點數付款QRCODE"
+            android:textColor="#555555"
+            android:textSize="17dp"
+            android:layout_margin="5dp"
+            android:id="@+id/qr_t" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="可用點數:"
+            android:textColor="#555555"
+            android:textSize="17dp"
+            android:layout_margin="5dp"
+            android:id="@+id/textView96" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555555"
+            android:textSize="17dp"
+            android:layout_margin="5dp"
+            android:id="@+id/can_point"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="460dp"
+        android:id="@+id/qr_view"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fef2e1"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="QRCODE有效時間剩餘："
+            android:textColor="#555555"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555555"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/eff_time"
+            android:text="05:00" />
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="#fef2e1">
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginRight="5dp"
+             android:layout_marginLeft="5dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="我的最愛"
+                 android:id="@+id/textView105"
+                 android:layout_gravity="center"
+                 android:textSize="18dp"
+                 android:textColor="#555555"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="類別:"
+                 android:id="@+id/textView102"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="5dp"
+                 android:textSize="18dp"
+                 android:textColor="#555555"/>
+
+             <Spinner
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/kind"
+                 android:layout_gravity="center_horizontal" />
+         </LinearLayout>
+     </LinearLayout>
+
+     <ListView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/favo_list" />-->
+
+</LinearLayout>

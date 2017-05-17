@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF" >
+        <!--
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#fef2e1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="My qrcode:"
+                        android:id="@+id/textView96"
+                        android:textColor="#555555"
+                        android:textSize="20dp"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:background="#fef5e8">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f6e4c4">
+                <Button
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#e78a08"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:text="歷史扣款紀錄"
+                    android:id="@+id/his_fac"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="◎請先輸入扣款金額(NTD)"
+                android:textColor="#555555"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="◎目前匯率(美金:台幣)："
+                    android:textColor="#555555"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=""
+                    android:textColor="#555555"
+                    android:textSize="20dp"
+                    android:id="@+id/rate"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+            <EditText
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="30dp"
+                android:ems="10"
+                android:text="0"
+                android:id="@+id/point"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fef2e1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="掃描記錄:"
+                android:id="@+id/textView98"
+                android:textColor="#555555"
+                android:textSize="20dp"
+                android:layout_margin="5dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="我的最愛"
+                    android:id="@+id/my_favo"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#3285c3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的最愛"
+                android:id="@+id/textView105"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textColor="#555555"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="類別:"
+                android:id="@+id/textView102"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="#555555"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kind"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"/>-->
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/histroy_list"
+            android:visibility="visible"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            />
+        <!-- <ListView
+             android:layout_width="fill_parent"
+             android:layout_height="250dp"
+             android:id="@+id/favo_list"
+             android:background="#FFFFFF"
+             android:layout_gravity="bottom"/>-->
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="#fef2e1">
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginRight="5dp"
+             android:layout_marginLeft="5dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="我的最愛"
+                 android:id="@+id/textView105"
+                 android:layout_gravity="center"
+                 android:textSize="18dp"
+                 android:textColor="#555555"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="類別:"
+                 android:id="@+id/textView102"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="5dp"
+                 android:textSize="18dp"
+                 android:textColor="#555555"/>
+
+             <Spinner
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/kind"
+                 android:layout_gravity="center_horizontal" />
+         </LinearLayout>
+     </LinearLayout>
+
+     <ListView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/favo_list" />-->
+
+</FrameLayout>

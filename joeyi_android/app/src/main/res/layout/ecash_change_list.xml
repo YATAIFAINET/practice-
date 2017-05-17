@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="日期"
+            android:id="@+id/date"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="金額"
+            android:id="@+id/point"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="明細"
+            android:id="@+id/ps"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

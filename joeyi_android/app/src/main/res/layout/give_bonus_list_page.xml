@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nick.joeyi_android2.Give_bonus_ListPage"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.0"
+        android:background="#f6e4c4" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="剩餘可用點數"
+                android:textColor="#555555"
+                android:paddingTop="18dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/can_use_bonus"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textColor="#555555"
+                android:paddingBottom="15dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="10"
+        android:background="#fef5e8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="日期"
+            android:id="@+id/textView128"
+            android:layout_weight="2.5"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="發送者"
+            android:id="@+id/textView131"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="接受者"
+            android:id="@+id/textView132"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="金額"
+            android:id="@+id/textView133"
+            android:layout_weight="1.5"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listView_exchange"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10" />
+</LinearLayout>

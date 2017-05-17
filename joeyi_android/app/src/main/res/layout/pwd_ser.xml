@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.afs_leo.join_data"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="親愛的使用者您好: "
+        android:id="@+id/textView94" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請正確填寫下列資料並按送出，系統將發送密碼信函到您登記在公司的電子信箱，謝謝您。"
+        android:id="@+id/textView95"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/join_shape"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="身分證號"
+            android:id="@+id/boss_title"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView10"
+            android:background="@drawable/s_line"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/boss_id"
+            android:background="@drawable/no_frame"
+            android:textSize="18dp"
+            android:autoText="false"
+            android:layout_margin="0dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/join_shape"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="姓名"
+            android:id="@+id/name_title"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView11"
+            android:background="@drawable/s_line"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/mb_name"
+            android:background="@drawable/no_frame"
+            android:textSize="18dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/join_shape"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="性別"
+            android:id="@+id/textView8"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView12"
+            android:background="@drawable/s_line"
+            android:layout_marginLeft="0dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/select2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/join_shape"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="生日"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#555555" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView13"
+            android:background="@drawable/s_line"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/birth_date"
+            android:inputType="none"
+            android:layout_weight="1"
+            android:background="@drawable/no_frame"
+            android:textSize="18dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="0dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="確認送出"
+        android:id="@+id/save_mbst"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="#3285c3"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>

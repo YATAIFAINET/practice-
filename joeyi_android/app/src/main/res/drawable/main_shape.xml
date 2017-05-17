@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 边缘线的宽度和颜色 -->
+    <stroke
+        android:width="1.5px"
+        android:color="#b5b6b6" />
+    <solid android:color="#ffffff" />
+    <!-- 中间渐变，角度0从左往右，正值为逆时针，270度为从上到下 -->
+    <!--   <gradient
+           android:angle="270" />-->
+    <!--  <gradient
+          android:angle="270"
+          android:color="#ff3300" />-->
+    <!-- 设置padding -->
+    <!-- 圆角的角度 -->
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+    <corners
+        android:radius="10dp" />
+</shape>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/wave_animation_1" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_2" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_3" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_4" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_5" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_6" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_7" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_8" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_9" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_10" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_11" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_12" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_13" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_14" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_15" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_16" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_17" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_18" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_19" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_20" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_21" android:duration="135" />
+    <item android:drawable="@drawable/wave_animation_22" android:duration="135" />    
+</animation-list> 

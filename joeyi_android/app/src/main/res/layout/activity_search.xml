@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_product"
+        android:visibility="gone"
+        android:layout_weight="9.5" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/no_search"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textSize="18dp"
+            android:textColor="#555555"
+            android:layout_marginBottom="25dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/list"
+        android:dividerHeight="5dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:id="@+id/imageView66"
+        android:background="#cccccc"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginLeft="-8dp"
+                android:id="@+id/go_shopping" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/shopping_icon"
+                    android:background="@drawable/icon_home"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="購物首頁"
+                    android:id="@+id/shopping_txt"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginLeft="-8dp"
+                android:id="@+id/go_kind" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/kind_icon"
+                    android:background="@drawable/icon_type"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品類別"
+                    android:id="@+id/kind_txt"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginLeft="-8dp"
+                android:id="@+id/go_cart" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView69"
+                    android:background="@drawable/icon_cart"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="購物車"
+                    android:id="@+id/textView99"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginLeft="-8dp"
+                android:id="@+id/go_account" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView70"
+                    android:background="@drawable/icon_account"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的帳戶"
+                    android:id="@+id/textView100"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginLeft="-8dp"
+                android:id="@+id/go_index" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView71"
+                    android:background="@drawable/icon_menu"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回主選單"
+                    android:id="@+id/textView101"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#555555" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

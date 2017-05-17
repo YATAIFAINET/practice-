@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/toptop"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/top_logo"
+            android:id="@+id/top_logo">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageView5"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/top_logo" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView2"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_track"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menu_list">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:weightSum="10"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/news"
+                        android:background="@drawable/news">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/shape_test"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最新訊息"
+                                android:id="@+id/textView121"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LATEST NEWS"
+                                android:id="@+id/textView122"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"></FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/shopping"
+                        android:background="@drawable/order">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/shape_test"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="購物專區"
+                                android:id="@+id/textView114"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ORDER ONLINE"
+                                android:id="@+id/textView115"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:weightSum="10"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/video"
+                        android:background="@drawable/vi">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/shape_test"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="影片介紹"
+                                android:id="@+id/textView123"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="VIDEO"
+                                android:id="@+id/textView124"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.2"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/account"
+                        android:background="@drawable/acc"
+                        android:layout_width="0dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/shape_test"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的帳戶"
+                                android:id="@+id/textView118"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MY ACCOUNT"
+                                android:id="@+id/textView119"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:weightSum="10"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/org_intro"
+                        android:background="@drawable/or">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/shape_test"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="組織查詢"
+                                android:id="@+id/textView112"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ORGANIZATION"
+                                android:id="@+id/textView113"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.2"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/moneypv"
+                        android:layout_weight="5"
+                        android:background="@drawable/bo">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/imageView_pv"
+                            android:scaleType="fitXY" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/shape_test"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="獎金查詢"
+                                android:id="@+id/textView109"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BONUS"
+                                android:id="@+id/textView110"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:weightSum="10"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/join"
+                        android:background="@drawable/re">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/shape_test"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="線上推薦"
+                                android:id="@+id/textView116"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECOMMENDED"
+                                android:id="@+id/textView117"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/ours"
+                        android:background="@drawable/co">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/shape_test"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="聯絡我們"
+                                android:id="@+id/textView125"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CONTACT US"
+                                android:id="@+id/textView126"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:weightSum="10"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:id="@+id/Qrcode"
+                        android:background="@drawable/qrcode">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/shape_test"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MyQrCode"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_chg_mb_no"
+        android:background="@android:drawable/ic_menu_sort_by_size" />
+
+</RelativeLayout>
